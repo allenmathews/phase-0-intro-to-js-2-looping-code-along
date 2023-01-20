@@ -1,32 +1,19 @@
-// const gifts = ["teddy bear", "drone", "doll"];
-
-// function wrapGifts(gifts) {
-//     for (let i = 0; i < gifts.length; i++) {
-//         console.log(`Wrapped ${gifts[i]} and added a bow!`);
-//         debugger;
-//     }
-//     return gifts;
-// }
-
-// wrapGifts(gifts);
-function writeCards(namesArray, event) {
-
-    let thankYouCards = [];
-
-    for (let i = 0; i < namesArray.length; i++) {
-        thankYouCards.push(`Thank you, ${namesArray[i]}, for the wonderful ${event} gift!`);
+// Code your solutions in this file
+function writeCards(names, eventName) {
+    const tyMessages = [];
+    for (let a = 0; a < names.length; a++) {
+        tyMessages.push(`Thank you, ${names[a]}, for the wonderful ${eventName} gift!`);
     }
-    return thankYouCards;
-
+    return tyMessages;
 }
 
-console.log(writeCards(['Bill', 'Ari', 'Arash'], "Easter"));
-
 function countDown(number) {
-    while (number >= 0) {
-        console.log(number);
-        number--;
-    }
-};
+    // while (number >= 0) {
+    //     console.log(number);
+    //     number--;
+    // }
 
-console.log(countDown(10))
+    for (let a = number; a >= 0; a--) {
+        console.log(a);
+    }
+}
